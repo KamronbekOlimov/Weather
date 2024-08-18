@@ -137,6 +137,7 @@ nav .container form hr{
     }
     header{
         background-image: url(./imgs/headerMobile.png);
+        min-height: 100vh;
     }
     .logoMobile{
         display: block;
