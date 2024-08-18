@@ -5,6 +5,7 @@ let getData = async (city) => {
         if (req.ok) {
             let data = await req.json();
             writeData(data);
+            input.value = ""
         } else {
             alert("City not found");
         }
