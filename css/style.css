@@ -19,7 +19,7 @@
 }
 header{
     background-image: url(./imgs/headerBg.png);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
 }
@@ -137,7 +137,6 @@ nav .container form hr{
     }
     header{
         background-image: url(./imgs/headerMobile.png);
-        min-height: 100vh;
     }
     .logoMobile{
         display: block;
