@@ -63,7 +63,7 @@ let writeData = (data) => {
             <h1>${Math.floor(data.main.temp)}°</h1>
             <div class="city">
               <h3>${data.name}</h3>
-              <span>${date.getHours()}:${date.getMinutes()} - ${daysWeek[date.getDay()]}, ${date.getDate()} ${months[date.getMonth()]}</span>
+              <span>${date.getHours()<10 ? "0" + date.getHours() : date.getHours()}:${date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes()} - ${daysWeek[date.getDay()]}, ${date.getDate()<10?"0"+date.getDate():date.getDate()} ${months[date.getMonth()]}</span>
             </div>
             <img
               src="https://openweathermap.org/img/w/${data.weather[0].icon}.png"
