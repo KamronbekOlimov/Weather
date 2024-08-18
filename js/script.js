@@ -27,7 +27,7 @@ let writeData = (data) => {
   document.querySelector(`.windSpeed`).textContent = `${Math.floor(data.wind.speed)}km/h`
   document.querySelector(`.mainTemp`).textContent = `${Math.floor(data.main.temp)}°`
   document.querySelector(`.cityName`).textContent = `${data.name}`
-  document.querySelector(".weatherIcon").src = "https://openweathermap.org/img/w/${data.weather[0].icon}.png"  
+  document.querySelector(".weatherIcon").src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png` 
 }
 document.addEventListener(`DOMContentLoaded`, ()=>{
     getData(`Fergana`)
@@ -36,8 +36,7 @@ let input = document.querySelector(`input`)
 let form = document.querySelector(`form`)
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    let city = input.value.trim();
-    if (city) {
-        getData(city);
+    if (input.value.trim()) {
+        getData(input.value.trim());
     }
 })
