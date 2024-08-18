@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.logoMobile{
+    display: none;
+}
+.container{
+    max-width: 1182px;
+    margin: 0 auto;
+}
+.weather{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+header{
+    background-image: url(./imgs/headerBg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+nav{
+    padding: 20px 0px;
+}
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}nav .container form{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+}
+nav .container form input{
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    outline: none;
+}
+nav .container form input::placeholder{
+    color: #ffffff70;
+}
+nav .container form button{
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+    /* <i class="fa-solid fa-xmark"></i> */
+}
+nav .container form hr{
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+}
+.hero .container .weather .flex{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.hero .container .weather .formP{
+    font-size: 18px;
+    color: #ffffff;
+}
+.drizzle{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.drizzle .drizzleP{
+    color: #ffffff;
+    font-size: 19px;
+}
+.temps{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+.tName{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tName p{
+    font-size: 18px;
+    color: #ffffff;
+}
+.tName h6{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    gap: 15px;
+    font-size: 18px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.info img{
+    width: 150px;
+}
+.info h1{
+    color: #ffffff;
+    font-size: 150px;
+    font-weight: 400;
+}
+.city{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.city h3{
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+}
+.city span{
+    color: #ffffff;
+    font-size: 20px;
+}
+.info i{
+    color: #ffffff;
+    font-size: 60px;
+}
+@media (max-width: 400px){
+    .container{
+        max-width: 300px;
+    }
+    header{
+        background-image: url(./imgs/headerMobile.png);
+    }
+    .logoMobile{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+    nav{
+        padding: 20px 0px;
+    }
+    nav .container form{
+        gap: 10px;
+    }
+    nav .container form input{
+        font-size: 12px;
+        width: 100px;
+    }
+    nav .container form button{
+        font-size: 12px;
+        margin-right: 2px;
+    }
+    .hero .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        gap: 50px;
+    }
+    .hero .container .weather{
+        justify-content: center;
+    }
+    .hero .container .weather .formP{
+        font-size: 15px;
+        text-align: center;
+    }
+    .drizzle{
+        row-gap: 50px;
+    }
+    .drizzle .drizzleP{
+        font-size: 15px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .temps{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 20px;
+    }
+    .tName{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .tName p{
+        font-size: 18px;
+        color: #ffffff;
+    }
+    .tName h6{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 18px;
+    }
+    .info{
+        justify-content: start;
+    }
+    .info img{
+        width: 50px;
+    }
+    .info h1{
+        color: #ffffff;
+        font-size: 60px;
+        font-weight: 400;
+    }
+    .city{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+    .city h3{
+        color: #ffffff;
+        font-size: 23px;
+        font-weight: 400;
+    }
+    .city span{
+        color: #ffffff;
+        font-size: 12px;
+    }
+}
