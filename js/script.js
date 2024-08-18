@@ -17,7 +17,7 @@ let months = ["January", "February", "March", "April", "May", "June", "July", "A
 let header = document.querySelector(`.header`)
 let writeData = (data) => {
     let date = new Date()
-    header.innerHTML += `<div class="weather">
+    header.innerHTML = `<div class="weather">
             <div class="flex">
               <p class="formP">Weather Details...</p>
               <div class="drizzle">
@@ -74,3 +74,12 @@ let writeData = (data) => {
 document.addEventListener(`DOMContentLoaded`, ()=>{
     getData(`Fergana`)
 })
+let input = document.querySelector(`input`)
+let form = document.querySelector(`form`)
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let city = input.value.trim();
+    if (city) {
+        getData(city);
+    }
+});

@@ -53,7 +53,6 @@ nav .container form button{
     font-size: 20px;
     cursor: pointer;
     margin-right: 20px;
-    /* <i class="fa-solid fa-xmark"></i> */
 }
 nav .container form hr{
     position: absolute;
